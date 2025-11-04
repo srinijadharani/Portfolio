@@ -76,6 +76,71 @@ section {
     border-radius: 50%;
     margin-bottom: 1.5rem;
 }
+/* About Section */
+#about {
+    padding: 3rem 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    text-align: left;
+    line-height: 1.8;
+    color: #333;
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+    color: #222;
+}
+
+#about em {
+    display: block;
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+#about p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 1.2rem;
+    text-align: justify; /* makes paragraph edges neater */
+}
+
+#about strong {
+    color: #000;
+}
+
+/* Optional subtle fade-in animation for elegance */
+#about {
+    opacity: 0;
+    animation: fadeIn 1.2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    #about {
+        padding: 2rem 1rem;
+        max-width: 95%;
+        text-align: left;
+    }
+
+    #about h2 {
+        font-size: 1.6rem;
+    }
+
+    #about p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+}
 
 .btn {
     background: none;
@@ -94,40 +159,85 @@ section {
     color: #fff;
 }
 
-/* Skills Section */
-.skills {
-    margin-top: 2rem;
+/* 💡 Modernized Skills Section */
+#skills {
+    padding: 2.5rem 1rem;
+    max-width: 1000px;
+    margin: 3rem auto;
     text-align: center;
+    background-color: #FFFFFF;
 }
 
-.skills h2 {
-    margin-bottom: 1.5rem;
+#skills h2 {
     font-size: 2rem;
+    font-weight: 700;
     color: #333;
-}
-
-/* Skill Categories Container */
-.skills-category {
-    display: flex;
-    flex-wrap: wrap; /* Allows items to wrap */
-    justify-content: center;
-    gap: 0.5rem; /* Gap between skill items */
     margin-bottom: 2rem;
 }
 
-/* Skill Items with Dynamic Boxes */
-.skills-item {
-    background: #F1F1F1;
-    padding: 0.3rem 0.6rem;
-    border-radius: 6px;
-    font-size: 0.9rem;
-    text-align: center;
-    flex: 0 1 auto;
-    min-width: 80px;
-    max-width: 200px;
-    border: 1px solid #E5E1DA;
-    margin: 0.2rem;
+/* Responsive grid for skill categories */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
 }
+
+/* Each skill card */
+.skill-card {
+    background: #F9F9F9;
+    border: 1px solid #E5E1DA;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    border-bottom: 1px solid #E5E1DA;
+    padding-bottom: 0.5rem;
+}
+
+.skill-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-card ul li {
+    background: #F1F1F1;
+    border-radius: 6px;
+    padding: 0.4rem 0.6rem;
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+    color: #333;
+    display: inline-block;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 768px) {
+    .skill-card {
+        padding: 1.2rem;
+    }
+
+    .skill-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .skill-card ul li {
+        font-size: 0.9rem;
+    }
+}
+
 
 /* Tiles for Work Experience, Projects, and Blog Sections */
 .tile {
@@ -138,6 +248,175 @@ section {
     margin: 1rem 0;
     text-align: left;
 }
+
+/* Experience Section Image Styling */
+.experience-media {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.experience-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.caption {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* Mobile optimization */
+@media screen and (max-width: 768px) {
+    .experience-img {
+        max-width: 100%;
+        border-radius: 6px;
+    }
+
+    .caption {
+        font-size: 0.85rem;
+        padding: 0 1rem;
+    }
+}
+
+
+/* Accomplishments Section */
+#accomplishments {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.accomplishment-item {
+    background: #F9F9F9;
+    border: 1px solid #E5E1DA;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    text-align: left;
+}
+/* Carousel Styles */
+.carousel-container {
+    position: relative;
+    max-width: 800px;
+    margin: 1rem auto 2rem;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid #E5E1DA;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.45s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: 400px; /* fixed visible height */
+    object-fit: contain; /* show entire image */
+    object-position: center;
+    background-color: #fafafa; /* matches your site’s light theme */
+    display: block;
+    border-radius: 8px;
+    padding: 5px 0; /* small breathing room */
+}
+
+.slide img {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255,255,255,0.9);
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 50%;
+    color: #92C7CF;
+    transition: background 0.3s;
+    z-index: 10;
+}
+
+.carousel-btn:hover {
+    background-color: #AAD7D9;
+    color: white;
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+
+/* Awards Section */
+#awards {
+    padding: 2rem 1rem;
+    max-width: 1000px;
+    margin: 3rem auto;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.award-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.award-item {
+    width: 300px;
+    background: #F9F9F9;
+    border: 1px solid #E5E1DA;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.award-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.award-img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;  /* Keeps award image intact */
+    object-position: center;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    background-color: #fafafa; /* Light fill for transparent areas */
+}
+
+.award-item h3 {
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.award-item p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
 
 /* Style for unordered lists within tiles */
 .tile ul {
@@ -276,5 +555,71 @@ footer {
     }
     .btn {
         padding: 0.5rem;
+    }
+}
+
+/* 📱 Mobile Tweaks for Accomplishments Section */
+@media screen and (max-width: 768px) {
+    #accomplishments {
+        padding: 1.5rem 0.5rem;
+        max-width: 95%;
+        text-align: center;
+    }
+
+    .accomplishment-item {
+        text-align: left;
+        padding: 1rem;
+        margin: 1.2rem 0;
+    }
+
+    .accomplishment-item h3 {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .accomplishment-item ul {
+        padding-left: 1rem;
+        font-size: 0.95rem;
+    }
+
+    .carousel-container {
+        max-width: 100%;
+        border-radius: 6px;
+        margin: 1rem auto 1.5rem;
+    }
+
+    .slide img {
+        height: 260px; /* reduces height for smaller screens */
+        padding: 0;
+        border-radius: 6px;
+    }
+
+    .carousel-btn {
+        font-size: 1.2rem;
+        padding: 0.2rem 0.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .accomplishment-item h3 {
+        font-size: 1rem;
+    }
+
+    .accomplishment-item ul li {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .slide img {
+        height: 220px; /* compact view on very small devices */
+    }
+
+    .carousel-btn {
+        font-size: 1rem;
+        padding: 0.15rem 0.4rem;
+    }
+
+    .carousel-container {
+        margin-bottom: 1rem;
     }
 }

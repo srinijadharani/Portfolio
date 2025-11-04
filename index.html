@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <!-- Navigation -->
@@ -15,36 +17,103 @@
             <li><a href="#intro">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#accomplishments">Accomplishments</a></li>
+            <li><a href="#awards">Awards</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#resume">Resume</a></li>
         </ul>
     </nav>
 
     <!-- Intro Section -->
-    <section id="intro">
-        <div class="intro-content">
-            <img src="srinija.png" alt="Your Photo" class="intro-image">
-            <h1>Hi, I'm Srinija Dharani</h1>
-            <p>Software Developer</p>
-            <a href="#about" class="btn">Learn More</a>
-        </div>
-    </section>
+<section id="intro">
+  <div class="intro-content">
+      <img src="images/profilepic.png" alt="picture" class="intro-image">
+      <h1>Hi, I'm Srinija Dharani</h1>
+      <p>Software Developer</p>
+      <a href="#about" class="btn">Learn More</a>
+  </div>
+</section>
+
 
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p><em>Not your usual AIML Enthusiast</em></p>
-        <p>I’ve always been a bit of a tech geek—what started as a love for math turned into a full-blown passion for Machine Learning, Software Development, and Web Development. I love turning messy data into clear, actionable insights that actually make a difference.
-            You’ll usually find me deep into Python, crafting data models, or building smart systems. For me, it’s more than just work; it’s an adventure of constant learning and creative problem-solving.
-            And, just for fun, if I weren’t a software developer, I’d probably be running my own cozy coffee-book shop. ☕📖</p>
-        <div class="skills">
-            <h2>Skills</h2>
-            <p><em>Programming & Scripting Languages:</em> Java, C, Python, JavaScript, HTML5/CSS3, Oracle, SQL <br>
-                <em>Frameworks, Libraries, and Tools:</em> React.js, Node.js, Express.js, Django, TensorFlow, PyTorch, Keras, OpenCV, scikit-learn, Git/GitHub, Linux, DevOps, LangChain, Bedrock Agent Framework, RAG Pipelines, Unit Testing, PyTest, APIs, CI/CD <br>
-                <em>Data and Cloud Technologies:</em> AWS, AWS Lambda, AWS SageMaker, AWS S3, Snowflake ML, LLMs, Microsoft Azure, Relational Databases, Distributed Systems, Prompt Engineering, Soda Core</p>
+        <p><em>Not your usual AIML enthusiast - I build useful things.</em></p>
+
+        <p>
+            I grew up in a family of doctors, and for a long time, I thought I’d follow the same path.
+            Everything changed in eighth grade when I saw my sister typing away on her laptop. She
+            introduced me to math and programming, and I was instantly hooked. I knew right then that
+            spending my days building technical solutions to real problems was what I wanted to do. I had found my
+            calling.
+        </p>
+
+        <p>
+            I come from a place where many people haven’t seen the spectacle that is technology.
+            Realizing how much it could shape the future, I wanted to help others see its impact.
+            Back in high school, as part of the Interact Club (a Rotary-sponsored service club),
+            I worked on projects that encouraged my classmates and community to explore how technology
+            could make everyday life easier and more connected.
+        </p>
+
+        <p>
+            That curiosity never left me. Over time, my love for math evolved into a passion for
+            machine learning, software development, and cloud technologies. Today, I’m focused on building solutions
+            that are not only technically strong but also human-centered.
+        </p>
+
+        <p>
+            And if I weren’t doing this, you’d probably find me running a cozy little coffee-and-book shop!
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <h3>Programming & Scripting Languages</h3>
+                <ul>
+                    <li>Java</li>
+                    <li>C</li>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>HTML5 / CSS3</li>
+                    <li>Oracle</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>Frameworks, Libraries & Tools</h3>
+                <ul>
+                    <li>React.js, Node.js, Express.js</li>
+                    <li>Django, TensorFlow, PyTorch, Keras</li>
+                    <li>OpenCV, scikit-learn</li>
+                    <li>Git / GitHub, Linux, DevOps</li>
+                    <li>LangChain, Bedrock Agent Framework</li>
+                    <li>RAG Pipelines, APIs, CI/CD, PyTest</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>Data & Cloud Technologies</h3>
+                <ul>
+                    <li>AWS (Lambda, SageMaker, S3)</li>
+                    <li>Snowflake ML, Microsoft Azure</li>
+                    <li>LLMs, Relational Databases</li>
+                    <li>Distributed Systems, Prompt Engineering</li>
+                    <li>Soda Core, Data Quality Automation</li>
+                </ul>
+            </div>
+
         </div>
     </section>
+
 
     <!-- Work Experience Section -->
     <section id="experience">
@@ -52,47 +121,173 @@
         <div class="experience-item tile">
             <h3>Software Development Engineer - 1 - Inovalon</h3>
             <p><strong>Duration:</strong> Jun 2025 – Present</p>
+            <p><em>Remote, United States of America</em></p>
             <ul>
-                <li>I’m responsible for analyzing, debugging, and resolving production issues in Inovalon’s <a href="https://www.inovalon.com/products/payer-cloud/risk-adjustment-software/">Risk Adjustment Software</a>, leveraging AWS services such as Comprehend Medical, S3, Step Functions, and ECS to ensure reliable performance.</li>
-                <li>I designed an Agentic AI workflow in the Unified Data Platform Service that’s being implemented to automatically detect and resolve data inconsistencies in customer claims, improving data quality and reliability across large-scale healthcare datasets.</li>
+                <li>I’m responsible for analyzing, debugging, and resolving production issues in Inovalon’s <a
+                        href="https://www.inovalon.com/products/payer-cloud/risk-adjustment-software/">Risk Adjustment
+                        Software</a>, leveraging AWS services such as Comprehend Medical, S3, Step Functions, and ECS to
+                    ensure reliable performance.</li>
+                <li>I designed an Agentic AI workflow in the Unified Data Platform Service that’s being implemented to
+                    automatically detect and resolve data inconsistencies in customer claims, improving data quality and
+                    reliability across large-scale healthcare datasets.</li>
             </ul>
+            <div class="experience-media">
+                <img src="images/inovalon_WIT.jpg" alt="Inovalon SDE-1" class="experience-img">
+                <p class="caption">Spoke at a panel for Women in Technology with my colleagues at Inovalon.</p>
+            </div>
+        </div>
+        <div class="experience-item tile">
+            <h3>Research Assistant - Florida State University</h3>
+            <p><strong>Duration:</strong> Aug 2024 – May 2025</p>
+            <p><em>Tallahassee, FL, United States of America</em></p>
+            <ul>
+                <li>Pre-print: Single Cell Graph clustering using graph autoencoders integrating SNVs and CNAs.</li>
+                <li>Worked on deploying and fine-tuning scGPT models for single-cell omics data analysis, optimizing
+                    performance and integration within existing research pipelines.</li>
         </div>
         <div class="experience-item tile">
             <h3>Software Engineer Intern - Inovalon</h3>
-            <p><strong>Duration:</strong> Jun 2024 – Aug 2024 (Remote)</p>
+            <p><strong>Duration:</strong> Jun 2024 – Aug 2024</p>
+            <p><em>Remote, United States of America</em></p>
             <ul>
-                <li>Enhanced the ML capabilities of the <a href="https://www.inovalon.com/products/provider-cloud/workforce-management/">Provider Workforce Management System</a>, reducing the prediction error rate by 0.5% within one week.</li>
-                <li>Developed 50+ unit tests for <a href="https://www.inovalon.com/products/payer-cloud/risk-adjustment-software/">Risk Adjustment Software</a>, enhancing robustness and dependability.</li>
-                <li>Increased false positive capture by 4% in the Risk Adjustment Software by identifying and fixing codebase issues.</li>
+                <li>Enhanced the ML capabilities of the <a
+                        href="https://www.inovalon.com/products/provider-cloud/workforce-management/">Provider Workforce
+                        Management System</a>, reducing the prediction error rate by 0.5% within one week.</li>
+                <li>Developed 50+ unit tests for <a
+                        href="https://www.inovalon.com/products/payer-cloud/risk-adjustment-software/">Risk Adjustment
+                        Software</a>, enhancing robustness and dependability.</li>
+                <li>Increased false positive capture by 4% in the Risk Adjustment Software by identifying and fixing
+                    codebase issues.</li>
             </ul>
+            <div class="experience-media">
+                <img src="images/inovalon_rep.jpeg" alt="Inovalon SDE-1" class="experience-img">
+                <p class="caption">Represented Inovalon at FSU Career Fair.</p>
+            </div>
         </div>
         <div class="experience-item tile">
             <h3>AI Intern - Tata Elxsi</h3>
             <p><strong>Duration:</strong> May 2022 – Aug 2022 (Remote)</p>
             <ul>
-                <li>Engineered a state-of-the-art system, IRIS, to identify anomalies in vaccine bottle seals, improving quality control.</li>
-                <li>Built a system to monitor real-time interactions between workers and machinery, ensuring safety protocols.</li>
+                <li>Engineered a state-of-the-art system, IRIS, to identify anomalies in vaccine bottle seals, improving
+                    quality control.</li>
+                <li>Built a system to monitor real-time interactions between workers and machinery, ensuring safety
+                    protocols.</li>
             </ul>
         </div>
     </section>
+
+    <!-- Accomplishments Section -->
+    <section id="accomplishments">
+        <h2>Accomplishments</h2>
+
+        <div class="accomplishment-item tile">
+            <h3>GitHub Campus Expert</h3>
+            <p><strong>Duration:</strong> Oct 2021 – Jul 2023</p>
+            <ul>
+                <li>Selected among 88 global student leaders to foster inclusive tech communities.</li>
+                <li>Organized hands-on workshops on Git, Data Analysis, and Open Source with 400+ members.</li>
+                <li>Led “Epoch,” a large-scale inter-campus technical fest for 10 000+ students.</li>
+            </ul>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="slide active">
+                        <img src="images/github_stall.png" alt="GitHub Campus Expert Workshop">
+                    </div>
+                    <div class="slide">
+                        <img src="images/github_1.JPG" alt="GitHub GITAM Community Event">
+                    </div>
+                    <div class="slide">
+                        <img src="images/github_award.jpg" alt="GitHub GITAM Community Event">
+                    </div>
+                </div>
+
+                <!-- Buttons should stay INSIDE this container -->
+                <button class="carousel-btn prev">❮</button>
+                <button class="carousel-btn next">❯</button>
+            </div>
+
+        </div>
+
+        <div class="accomplishment-item tile">
+            <h3>President & Founder – GitHub GITAM Community</h3>
+            <p><strong>Duration:</strong> Dec 2021 – Apr 2023</p>
+            <ul>
+                <li>Founded and led a 45-member team conducting 25 tech events in 18 months.</li>
+                <li>Delivered data analysis workshops for undergraduates and expanded community reach.</li>
+                <li>Organized an inter-campus techno-cultural fest uniting professionals and thousands of students.</li>
+                <li>Won the Most Promising Student Community award at ACE (Achieving Excellence) Awards at GITAM
+                    University.</li>
+            </ul>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="slide active">
+                        <img src="images/github_stall.png" alt="GitHub Campus Expert Workshop">
+                    </div>
+                    <div class="slide">
+                        <img src="images/github_1.JPG" alt="GitHub GITAM Community Event">
+                    </div>
+                    <div class="slide">
+                        <img src="images/github_award.jpg" alt="GitHub GITAM Community Event">
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-btn prev">❮</button>
+            <button class="carousel-btn next">❯</button>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards">
+        <h2>Awards</h2>
+
+        <div class="award-list">
+            <div class="award-item tile">
+                <img src="images/grad_award.jpg" alt="Academic Performance Excellency" class="award-img">
+                <h3>Award for Exceptional Academic Performance</h3>
+                <p>Recognized for outstanding academic performance in Computer Science, graduating with a CGPA of 9.4.
+                </p>
+            </div>
+
+            <div class="award-item tile">
+                <img src="images/award_23.jpg" alt="Best Speaker Award" class="award-img">
+                <h3>All-Rounder of the Year (2023)</h3>
+                <p>Honored for exceptional balance of leadership, academics, and community engagement throughout the
+                    academic year.</p>
+            </div>
+
+            <div class="award-item tile">
+                <img src="images/award22.jpg" alt="Most Valuable Person" class="award-img">
+                <h3>Most Valuable Contributor – GitHub GITAM</h3>
+                <p>Awarded for demonstrating initiative, teamwork, and consistent impact in leading the GitHub GITAM
+                    community.</p>
+            </div>
+        </div>
+    </section>
+
+
+
 
     <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
         <div class="project-item tile">
             <h3>Pre-print: Single Cell Graph clustering using graph autoencoders integrating SNVs and CNAs</h3>
-            <p>Demonstrated up to 70% higher V-measure compared to baseline methods by integrating SNV and CNA signals for single-cell clustering across 8 simulated and 1 real dataset.</p>
+            <p>Demonstrated up to 70% higher V-measure compared to baseline methods by integrating SNV and CNA signals
+                for single-cell clustering across 8 simulated and 1 real dataset.</p>
             <a href="https://www.biorxiv.org/content/10.1101/2025.01.28.635357v1" class="btn">View on BioRxiv</a>
         </div>
         <div class="project-item tile">
             <h3>ChatGPT – Developer Analysis</h3>
-            <p>Extracted actionable insights from DevGPT data, driving data-informed improvements and strategic decision-making.</p>
+            <p>Extracted actionable insights from DevGPT data, driving data-informed improvements and strategic
+                decision-making.</p>
             <p>Skills: Python, Data Cleaning, Analysis, Visualization, Research and Development</p>
             <a href="https://github.com/srinijadharani/DevGPT-Analysis" class="btn">View on GitHub</a>
         </div>
         <div class="project-item tile">
             <h3>Multiple Dynamic Outlier-Detection from a Data Stream</h3>
-            <p>Implemented the MDUAL algorithm, achieving a 92.3% increase in effectiveness over traditional outlier detection methods.</p>
+            <p>Implemented the MDUAL algorithm, achieving a 92.3% increase in effectiveness over traditional outlier
+                detection methods.</p>
             <p>Skills: Java, Anomaly Detection</p>
             <a href="https://github.com/devjothish/Group6MDUAL" class="btn">View on GitHub</a>
         </div>
@@ -109,23 +304,28 @@
         <h2>Blog</h2>
         <div class="blog-item tile">
             <h3>How I Played the Chrome Dino Game with Just My Palm</h3>
-            <p>Read my article on Analytics India Magazine, where I share my experience of using AI techniques to control the Chrome Dino game with just a palm gesture.</p>
-            <a href="https://analyticsindiamag.com/ai-mysteries/how-i-played-the-chrome-dino-game-with-just-my-palm/" target="_blank" class="btn">Read Article</a>
+            <p>Read my article on Analytics India Magazine, where I share my experience of using AI techniques to
+                control the Chrome Dino game with just a palm gesture.</p>
+            <a href="https://analyticsindiamag.com/ai-mysteries/how-i-played-the-chrome-dino-game-with-just-my-palm/"
+                target="_blank" class="btn">Read Article</a>
         </div>
         <div class="blog-item tile">
             <h3>Every Single ML Algorithm Ever</h3>
             <p>An Exhaustive Compilation of Every Known ML Algorithm</p>
-            <a href="https://srinijad.hashnode.dev/every-single-ml-algorithm-ever#clqejaw0f0dv485nv8ux92rdz" target="_blank" class="btn">Read Article</a>
+            <a href="https://srinijad.hashnode.dev/every-single-ml-algorithm-ever#clqejaw0f0dv485nv8ux92rdz"
+                target="_blank" class="btn">Read Article</a>
         </div>
         <div class="blog-item tile">
             <h3>Unraveling the Power of Data Science</h3>
             <p>A Journey into The Heart of Information</p>
-            <a href="https://srinijad.hashnode.dev/unraveling-the-power-of-data-science-a-journey-into-the-heart-of-information" target="_blank" class="btn">Read Article</a>
+            <a href="https://srinijad.hashnode.dev/unraveling-the-power-of-data-science-a-journey-into-the-heart-of-information"
+                target="_blank" class="btn">Read Article</a>
         </div>
         <div class="blog-item tile">
             <h3>Leveraging AIML for Healthcare Data Analytics</h3>
             <p>Insights from My Experience at INOVALON</p>
-            <a href="https://srinijad.hashnode.dev/leveraging-aiml-healthcare" target="_blank" class="btn">Read Article</a>
+            <a href="https://srinijad.hashnode.dev/leveraging-aiml-healthcare" target="_blank" class="btn">Read
+                Article</a>
         </div>
     </section>
 
@@ -142,7 +342,7 @@
         <h2>Contact Me</h2>
         <a href="mailto:srinijadharani2@gmail.com" class="btn">Send an Email</a>
     </section>
-    
+
     <!-- Footer Section -->
     <footer>
         <div class="social-links">
@@ -154,4 +354,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
