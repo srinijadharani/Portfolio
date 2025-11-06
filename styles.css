@@ -558,68 +558,79 @@ footer {
     }
 }
 
-/* 📱 Mobile Tweaks for Accomplishments Section */
+/* Improved Mobile Layout for Accomplishments Carousels */
 @media screen and (max-width: 768px) {
+
     #accomplishments {
-        padding: 1.5rem 0.5rem;
+        padding: 1.5rem 0.75rem;
         max-width: 95%;
-        text-align: center;
     }
 
     .accomplishment-item {
-        text-align: left;
         padding: 1rem;
-        margin: 1.2rem 0;
+        margin: 1.5rem 0;
     }
 
     .accomplishment-item h3 {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         text-align: center;
+        margin-bottom: 0.8rem;
     }
 
     .accomplishment-item ul {
         padding-left: 1rem;
-        font-size: 0.95rem;
-    }
-
-    .carousel-container {
-        max-width: 100%;
-        border-radius: 6px;
-        margin: 1rem auto 1.5rem;
-    }
-
-    .slide img {
-        height: 260px; /* reduces height for smaller screens */
-        padding: 0;
-        border-radius: 6px;
-    }
-
-    .carousel-btn {
-        font-size: 1.2rem;
-        padding: 0.2rem 0.5rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .accomplishment-item h3 {
-        font-size: 1rem;
-    }
-
-    .accomplishment-item ul li {
         font-size: 0.9rem;
         line-height: 1.4;
     }
 
+    /* Carousel tweaks */
+    .carousel-container {
+        max-width: 100%;
+        border-radius: 8px;
+        margin: 1rem auto 2rem;
+        border: none; /* looks cleaner on mobile */
+    }
+
     .slide img {
-        height: 220px; /* compact view on very small devices */
+        height: 230px;
+        padding: 0;
+        border-radius: 8px;
+        object-fit: contain;
+    }
+
+    /* Buttons */
+    .carousel-btn {
+        font-size: 1.2rem;
+        padding: 0.2rem 0.55rem;
+        top: auto;
+        bottom: 8px; 
+        transform: none;
+        opacity: 0.9;
+    }
+
+    .carousel-btn.prev {
+        left: 20px;
+    }
+
+    .carousel-btn.next {
+        right: 20px;
+    }
+}
+
+/* Extra-small phones (iPhone SE / small Android) */
+@media screen and (max-width: 480px) {
+
+    .slide img {
+        height: 190px;
     }
 
     .carousel-btn {
         font-size: 1rem;
-        padding: 0.15rem 0.4rem;
+        padding: 0.15rem 0.45rem;
+        bottom: 6px;
     }
 
-    .carousel-container {
-        margin-bottom: 1rem;
+    .accomplishment-item ul li {
+        font-size: 0.85rem;
     }
 }
