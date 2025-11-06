@@ -558,79 +558,46 @@ footer {
     }
 }
 
-/* Improved Mobile Layout for Accomplishments Carousels */
+/* Mobile: turn carousel into stacked images */
 @media screen and (max-width: 768px) {
 
-    #accomplishments {
-        padding: 1.5rem 0.75rem;
-        max-width: 95%;
+    /* Stop sliding / scrolling */
+    .carousel {
+        display: block !important;
+        transform: none !important;
     }
 
-    .accomplishment-item {
-        padding: 1rem;
-        margin: 1.5rem 0;
-    }
-
-    .accomplishment-item h3 {
-        font-size: 1.2rem;
-        text-align: center;
-        margin-bottom: 0.8rem;
-    }
-
-    .accomplishment-item ul {
-        padding-left: 1rem;
-        font-size: 0.9rem;
-        line-height: 1.4;
-    }
-
-    /* Carousel tweaks */
-    .carousel-container {
-        max-width: 100%;
-        border-radius: 8px;
-        margin: 1rem auto 2rem;
-        border: none; /* looks cleaner on mobile */
+    .slide {
+        width: 100% !important;
+        display: block !important;
+        margin-bottom: 12px;
     }
 
     .slide img {
-        height: 230px;
+        height: auto !important;
+        max-height: 320px;
+        object-fit: contain;
         padding: 0;
         border-radius: 8px;
-        object-fit: contain;
     }
 
-    /* Buttons */
+    /* Hide navigation buttons */
     .carousel-btn {
-        font-size: 1.2rem;
-        padding: 0.2rem 0.55rem;
-        top: auto;
-        bottom: 8px; 
-        transform: none;
-        opacity: 0.9;
+        display: none !important;
     }
 
-    .carousel-btn.prev {
-        left: 20px;
-    }
-
-    .carousel-btn.next {
-        right: 20px;
+    /* Remove container overflow to avoid cut-off */
+    .carousel-container {
+        overflow: visible !important;
+        border: none;
+        margin-bottom: 1.5rem;
     }
 }
 
-/* Extra-small phones (iPhone SE / small Android) */
+/* Extra small screens */
 @media screen and (max-width: 480px) {
-
     .slide img {
-        height: 190px;
-    }
-
-    .carousel-btn {
-        font-size: 1rem;
-        padding: 0.15rem 0.45rem;
-        bottom: 6px;
-    }
-
-    .accomplishment-item ul li {
-        font-size: 0.85rem;
+        max-height: 240px;
     }
 }
+
